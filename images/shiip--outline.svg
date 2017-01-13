@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="32" cy="32" r="32"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="64" height="64" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" stroke="#000000">
+            <g id="logo">
+                <polygon id="Polygon" stroke-width="2" points="54.4646465 36.2020202 43.4747475 48.040404 20.8484848 48.040404 9.85858586 36.2020202"></polygon>
+                <polyline id="Path" stroke-width="2" points="20.8484848 48.040404 32.2019413 36.4233744 43.5553977 48.040404"></polyline>
+                <use id="Oval" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                <polyline id="Path-2" stroke-width="2" points="14.6767677 36.2020202 30.0318813 16.969697 30.030303 36.2020202"></polyline>
+                <polyline id="Path-3" stroke-width="2" points="33.1313131 36.120423 33.1313131 7.5959596 48.1616162 36.2020202"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,7 +4,6 @@
 }
 
 .form--interest input[type='text'], .form--interest input[type='email'], .form--interest input[type='url'] {
-  width: calc(50% - 12px);
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: rgba(0, 0, 0, 0.87);
     font-weight: 500;
@@ -21,8 +20,14 @@
     color: rgba(0, 0, 0, 0.87);
     font-weight: 500;
   }
-  &:nth-child(2n) {
-    margin-right: 12px;
+}
+
+@media screen and (min-width: 30em) {
+  .form--interest input[type='text'], .form--interest input[type='email'], .form--interest input[type='url'] {
+    width: calc(50% - 12px);
+    &:nth-child(2n) {
+      margin-right: 12px;
+    }
   }
 }
 
