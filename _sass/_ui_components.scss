@@ -1,0 +1,51 @@
+.reset-button {
+  background: none;
+}
+
+html, body {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.red {
+  color: $red;
+}
+
+.arrow-right:before, {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: $arrow-size solid transparent;
+  border-bottom: $arrow-size solid transparent;
+  border-left: $arrow-size solid transparent;
+
+  margin-right: 8px;
+}
+
+.arrow-right--red:before {
+  border-left-color: $red;
+}
+
+.button--red {
+  border-color: $red;
+  background-color: $red-10;
+}
+
+.button--cta {
+  position: relative;
+  &:before {
+    content: '';
+    background-color: $red;
+    opacity: 0.1;
+    position: absolute;
+    top: 4px;
+    bottom: -4px;
+    left: 4px;
+    right: -4px;
+    border-radius: 0.25rem;
+  }
+}
+
+footer {
+
+}
