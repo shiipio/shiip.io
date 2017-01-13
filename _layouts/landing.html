@@ -85,37 +85,14 @@
 
           <div class="bb b--black-10 pa5 nested-list-reset">
             <h2 class="mt0">Frequently asked questions</h2>
-            <ul class="faq">
-              <li class="bb bt bw1 pv3 ph2">
-                <input type="checkbox" checked>
-                <p class="ma0 faq__question">What is Shiip?</p>
-                <p class="mb0 faq__answer">Answer</p>
-              </li>
+            <ul class="faq bt bw1">
+              {% for faq in site.faqs %}
               <li class="bb bw1 pv3 ph2">
                 <input type="checkbox" checked>
-                <p class="ma0 faq__question">What do I get?</p>
-                <p class="mb0 faq__answer">Answer</p>
+                <p class="ma0 faq__question">{{ faq.question }}</p>
+                <p class="mb0 faq__answer">{{ faq.answer }}</p>
               </li>
-              <li class="bb bw1 pv3 ph2">
-                <input type="checkbox" checked>
-                <p class="ma0 faq__question">What happens after the year?</p>
-                <p class="mb0 faq__answer">Answer</p>
-              </li>
-              <li class="bb bw1 pv3 ph2">
-                <input type="checkbox" checked>
-                <p class="ma0 faq__question">I have cash, can I not pay through instalments?</p>
-                <p class="mb0 faq__answer">Answer</p>
-              </li>
-              <li class="bb bw1 pv3 ph2">
-                <input type="checkbox" checked>
-                <p class="ma0 faq__question">How do I know Shiip is reliable?</p>
-                <p class="mb0 faq__answer">Answer</p>
-              </li>
-              <li class="bb bw1 pv3 ph2">
-                <input type="checkbox" checked>
-                <p class="ma0 faq__question">What happens if I shut down the company after 6 months?</p>
-                <p class="mb0 faq__answer">Answer</p>
-              </li>
+              {% endfor %}
             </ul>
           </div>
 
