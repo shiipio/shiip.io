@@ -23,7 +23,7 @@
                 <p class="w-50-l w-100 pr3 fl-l lh-copy measure mv0">Our mission is to help you build and ship your product for a fraction of the cost and effort of doing it yourself. Building a good product is expensive, and time and money can both work against you at seed stage. Shiip brings to the table the technical resources and guidance on establishing a technology company.</p>
                 <p class="w-50-l w-100 fl-l lh-copy measure mv0-l">We have seen great ideas executed badly and demoralising good founders. If your community is scarce in technology leaders, don’t let that be an obstacle. Come talk to us.</p>
               </div>
-              <a href="#" class="link red arrow-right arrow-right--red f6">Learn how we can help to build your product</a>
+              <a href="/product" class="link red arrow-right arrow-right--red f6">Learn how we can help to build your product</a>
             </div>
           </div>
 
@@ -83,13 +83,14 @@
                 <dd class="f3 f2-ns b ml0">3%</dd>
               </dl>
             </div>
-            <a href="#" class="arrow-right arrow-right--red link red f6">Learn how we can help to build your product</a>
+            <a href="/product" class="arrow-right arrow-right--red link red f6">Learn how we can help to build your product</a>
           </div>
 
           <div class="bb b--black-10 pa5-l pa0 nested-list-reset">
             <h2 class="mt0">Frequently asked questions</h2>
             <ul class="faq bt bw1">
-              {% for faq in site.faqs %}
+              {% assign items = site.faqs | sort: 'order' | reversed %}
+              {% for faq in items %}
               <li class="bb bw1 pv3 ph2">
                 <input type="checkbox" checked>
                 <p class="ma0 faq__question">{{ faq.question }}</p>
