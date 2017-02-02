@@ -62,11 +62,8 @@
   }
 }
 
-.faq__question:after {
-  content: '+';
-  float: right;
-  font-size: 24px;
-  margin-top: -6px;
+.faq__question, .faq__answer {
+  width: 90%;
 }
 
 .phone {
@@ -165,7 +162,7 @@
 
 .timeline {
   position: relative;
-  height: 2000px;
+  height: 1800px;
   margin-top: 100px;
   div {
     position: absolute;
