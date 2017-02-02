@@ -66,6 +66,16 @@
   width: 90%;
 }
 
+.product {
+  max-width: 910px;
+}
+
+@media screen and (min-width: 60em) {
+  .product__content {
+    width: calc(100% - 312px - 4rem);
+  }
+}
+
 .phone {
   background: transparent url(../images/phone_top.svg) no-repeat;
   background-repeat: no-repeat;
