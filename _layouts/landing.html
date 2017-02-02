@@ -16,7 +16,7 @@
               <div class="bb bw1 b--black-60">
                 <h1 class="f3 f1-l mb0">Shiip provides you with a technical cofounder</h1>
                 <p class="b black-60 mv2">Not freelancers, not dev shop, CTO as a service</p>
-                <a href="#form-interest" class="link br2 ba bw1 ph4 pv2 mb2 dib mt3 mb4 red button--cta">Talk to us!</a>
+                <a href="https://shiip.typeform.com/to/PstUdA" target="_blank" class="link br2 ba bw1 ph4 pv2 mb2 dib mt3 mb4 red button--cta">Talk to us!</a>
               </div>
               <h2 class="mv3">We help founders get started on their product</h2>
               <div class="cf mb4">
@@ -27,7 +27,7 @@
             </div>
           </div>
 
-          <div class="flex flex-column flex-row-ns mw7 center pa5-l pa3">
+          <div class="flex flex-column flex-row-ns mw7 center pa5-l pt5 ph3 pb3">
             <div class="w-100 w-40-ns pr3-ns order-0 tc">
               <img src="images/talent.svg">
             </div>
@@ -58,8 +58,8 @@
             </div>
           </div>
 
-          <div class="bb b--black-10 nested-list-reset pv3">
-            <h2>How do you pay?</h2>
+          <div class="bb b--black-10 nested-list-reset pv4">
+            <h2 class="mv0">How do you pay?</h2>
             <div class="flex flex-row flex-wrap justify-around pv1">
               <dl class="dib w-50 w-20-l">
                 <img src="images/downpayment.svg" class="db pv4">
@@ -86,15 +86,16 @@
             <a href="{{site.baseurl}}/product" class="arrow-right arrow-right--red link red f6">Learn how we can help to build your product</a>
           </div>
 
-          <div class="bb b--black-10 pa5-l pa0 nested-list-reset">
+          <div class="bb b--black-10 pa5-l ph0 pv4 nested-list-reset">
             <h2 class="mt0">Frequently asked questions</h2>
             <ul class="faq bt bw1">
               {% assign items = site.faqs | sort: 'order' | reversed %}
               {% for faq in items %}
-              <li class="bb bw1 pv3 ph2">
+              <li class="bb bw1 pv3 ph2 cf">
                 <input type="checkbox" checked>
-                <p class="ma0 faq__question">{{ faq.question }}</p>
-                <p class="mb0 faq__answer">{{ faq.answer }}</p>
+                <p class="fr ma0 f4 lh-solid">+</p>
+                <p class="ma0 fl faq__question">{{ faq.question }}</p>
+                <p class="mb0 fl faq__answer">{{ faq.answer }}</p>
               </li>
               {% endfor %}
             </ul>
@@ -103,15 +104,7 @@
           <div class="form--interest pv4" id="form-interest">
             <h2 class="mt0">I’m sold, how do I begin?</h2>
             <p class="mv4">If you have something you want to build, simply fill out this form, and we will take it from here.</p>
-            <form action="" method="post" accept-charset="utf-8">
-              <div class="flex flex-column flex-row-ns flex-wrap-ns justify-around-ns">
-                <input type="text" class="ba bw1 br2 pa2 mb2" placeholder="Name" name="name">
-                <input type="email" class="ba bw1 br2 pa2 mb2" placeholder="Email address" name="email">
-                <input type="text" class="ba bw1 br2 pa2 mb2" placeholder="Company" name="company">
-                <input type="url" class="ba bw1 br2 pa2 mb2" placeholder="Company website" name="website">
-              </div>
-              <input type="submit" value="Submit" class="reset-button br2 ba bw1 ph4 pv2 mv3 red button--red">
-            </form>
+            <a href="https://shiip.typeform.com/to/PstUdA" target="_blank" class="link br2 ba bw1 ph4 pv2 mb2 dib mt3 mb4 red button--cta">Talk to us!</a>
           </div>
         </div>
 
