@@ -93,9 +93,9 @@
               {% for faq in items %}
               <li class="bb bw1 pv3 ph2 cf">
                 <input type="checkbox" checked>
-                <p class="fr ma0 f4 lh-solid">+</p>
+                <p class="fr ma0 f4 lh-solid faq__open-icon">+</p>
                 <p class="ma0 fl faq__question">{{ faq.question }}</p>
-                <p class="mb0 fl faq__answer">{{ faq.answer }}</p>
+                <div class="fl faq__answer">{{ faq.content }}</div>
               </li>
               {% endfor %}
             </ul>

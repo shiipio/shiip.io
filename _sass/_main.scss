@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: $red;
+}
+
 .content {
   max-width: 1200px;
   margin: 0 auto;
@@ -35,11 +40,23 @@
   li {
     position: relative;
   }
+  .faq__open-icon {
+    transform: rotate(45deg);
+    font-weight: 600;
+  }
   .faq__answer {
     max-height: 800px;
     opacity: 1;
     transform: translate(0, 0);
     transition: all 0.25s ease-in-out;
+    position: relative;
+    z-index: 2;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .faq__question {
+    font-weight: 600;
   }
   input[type=checkbox] {
     cursor: pointer;
@@ -58,6 +75,10 @@
       max-height: 0;
       opacity: 0;
       transform: translate(0, 50%);
+    }
+
+    &:checked ~ .faq__open-icon {
+      transform: rotate(0deg);
     }
   }
 }
@@ -146,7 +167,7 @@
     }
   }
   .bubble--client {
-    background-color: #F06970;
+    background-color: #F04850;
     color: #fff;
     margin-left: auto;
     &:before {
@@ -156,7 +177,7 @@
       bottom: -4px;
       right: -7px;
       height: 20px;
-      border-right: 20px solid #F06970;
+      border-right: 20px solid #F04850;
       border-bottom-left-radius: 16px 14px;
       transform: translate(0, -2px);
     }
